@@ -1,0 +1,36 @@
+
+@keyframes move{
+    0% {
+        left: 0%;
+
+    }
+    50%{
+        left: 50%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes grow{
+    from{
+        font-size: 1px;
+    }
+    to{
+        font-size: 100px;
+
+    }
+}
+h1{
+    position: relative;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+h2{
+    
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+}
