@@ -37,6 +37,21 @@ function App() {
         }
     }
 
+    if(state.score===10){
+        return(
+            <div id="verdict">
+                YOU WON!
+            </div>
+        )
+    }
+    if(state.score===-5){
+        return(
+            <div id="verdict">
+                YOU LOST!
+                REFRESH THE PAGE TO RESTART
+            </div>
+        )
+    }
     return (
         <div className={`app ${state.isCorrect===null?'':state.isCorrect?'correct':'incorrect'}`} >
             <Question num1={state.num1} num2={state.num2} />
