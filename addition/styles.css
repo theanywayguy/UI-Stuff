@@ -1,0 +1,32 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.question {
+    font-size: 72px;
+    margin-bottom: 1rem;
+}
+.app.correct{
+    background-color: green;
+}
+.app.incorrect{
+    background-color: red;
+}
+
+.response-input {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.score {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
